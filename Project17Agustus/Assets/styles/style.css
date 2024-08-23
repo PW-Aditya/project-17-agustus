@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman';
+    margin: 0;
+    padding: 0;
+}
+
+
+p {
+    font-size: small;
+    font-family: "Times New Roman";
+
+}
+h2 {
+    padding: 5px;
+    text-align: center;
+}
+footer {
+    padding: 20px;
+    color: white;
+    background-color: rgb(234, 26, 47);
+    text-align: center;
+    font-weight: bold;
+}
+nav a {
+    font-size: 14px;
+    font-family: serif;
+    font-weight: 400;
+    text-decoration: none;
+
+}
+nav a:visited {
+    color: rgb(214, 222, 227);
+}
+nav a:hover {
+    font-weight: bold;
+}
+.nav a:active {
+    color: orangered;
+}
+.panitia {
+    text-align: center;
+
+}
+.profile header {
+    text-align: center;
+}
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+.profile img {
+    width: 200px;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.Agustus {
+    font-size: 20px;
+    padding: 60px;
+    text-align:center;
+}
+.Agustus p{
+    font-size: large;
+}
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+    color: white
+}
+nav {
+    background-color: rgb(183, 16, 35);
+    text-align:center;
+    padding: 0.1px;
+
+    position: sticky;
+    top: 0;
+}
+main {
+    padding: 20px;
+    display: flex;
+}
+
+#content{
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+}
+aside {
+    flex: 2;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+header{
+    display: inline;
+}
+@media screen and (max-width: 1200px){
+    main{
+        flex-flow: column nowrap;
+    }
+    main aside{
+        align-self: center;
+    }
+}
+@media screen and (max-width: 932px){
+     nav ul{
+            justify-content: center;
+     }
+     main aside{
+        align-self: center;
+    }
+}
